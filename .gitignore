@@ -1,0 +1,28 @@
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches and logs
+.cache/
+logs/
+
+# Virtual environment
+venv/
+.env/
+
+# Compiled source
+*.pyc
+
+# Dependency directories
+.env
+lib
+lib64
+include
+bin
+
+# Other
+*.db
+*.sqlite
+*.log
