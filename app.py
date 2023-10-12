@@ -31,7 +31,7 @@ class UsersResource(Resource):
             })
         return {'users': user_list}
 
-# Add the UsersResource to the API and specify the route
+
 api.add_resource(UsersResource, '/users')
 
 if __name__ == '__main__':
