@@ -17,10 +17,10 @@ services:
     image: mysql:latest
     container_name: my-mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: your_root_password
-      MYSQL_DATABASE: your_database_name
-      MYSQL_USER: your_username
-      MYSQL_PASSWORD: your_password
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_DATABASE: flask-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
     ports:
       - "3306:3306"
     volumes:
