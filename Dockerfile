@@ -26,3 +26,4 @@ ENV MYSQL_PASSWORD=
 
 # Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0"]
+
