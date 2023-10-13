@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost/flask-db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-api = Api(app)  # Initialize Flask-RESTful
+api = Api(app)  
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -30,7 +30,6 @@ class UsersResource(Resource):
                 'email': user.email
             })
         return {'users': user_list}
-
 
 api.add_resource(UsersResource, '/users')
 
